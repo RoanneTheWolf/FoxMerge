@@ -1498,7 +1498,7 @@
         mergeProgressBar.style.width = newMergeProgress * 100 / newMergeTime + "%";
 
         if (newFoxProgress > newFoxTime) {
-            let foxTier = biggestFoxCreated//Math.floor(Math.random() * biggestFoxCreated + 1);
+            let foxTier = Math.floor(Math.random() * biggestFoxCreated + 1);
             let foxLayer = Math.floor((foxTier - 1) / 7);
             if (emptyBoxes[foxLayer].length != 0) {
                 newFoxProgress = 0;
